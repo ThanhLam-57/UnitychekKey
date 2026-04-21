@@ -423,7 +423,7 @@ MonoBehaviour:
   statusText: {fileID: 1823803731}
   checkButton: {fileID: 300542985}
   logoutButton: {fileID: 1945118417}
-  apiUrl: https://localhost:55966/api/license/check
+  apiUrl: https://license-server-production-3cd1.up.railway.app/api/license/check
   gameSceneName: GameScene
 --- !u!4 &277603210
 Transform:
@@ -735,6 +735,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &716801420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716801424}
+  - component: {fileID: 716801423}
+  - component: {fileID: 716801422}
+  - component: {fileID: 716801421}
+  m_Layer: 0
+  m_Name: TikTokSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &716801421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716801420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9b108c78fb6e349b82a3263f1eb710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiver: {fileID: 716801422}
+--- !u!114 &716801422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716801420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b64617b625c6df243adb39c4a38ac6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 7777
+  logRaw: 1
+--- !u!114 &716801423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716801420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1341e96453348d7498d8a8c05ba41eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &716801424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716801420}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 302.76227, y: 319.46375, z: -1.811402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &955140730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,3 +1984,4 @@ SceneRoots:
   - {fileID: 955140734}
   - {fileID: 1780838262}
   - {fileID: 277603210}
+  - {fileID: 716801424}
